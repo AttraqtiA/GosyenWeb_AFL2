@@ -1,5 +1,6 @@
 
-/* ini masih file customan tailwind, file app.css ini harusnya buat css biasa yg no framework, sementara kutaruh sini */
+/* ini masih file customan tailwind, file app.css ini harusnya buat css biasa yg no framework, sementara kutaruh sini, */
+
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +12,7 @@
         width : var(--progress);
     }
 
-    .webkit_clamp { /*custom untuk 10, bisa tailwind sebenarnya*/
+    .webkit_clamp { /*custom untuk 10, bisatailwind sebenarnya*/
         display: -webkit-box;
         -webkit-line-clamp: 10;
         -webkit-box-orient: vertical;
