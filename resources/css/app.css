@@ -1,0 +1,126 @@
+
+/* ini masih file customan tailwind, file app.css ini harusnya buat css biasa yg no framework, sementara kutaruh sini */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    #progress_bar {
+        --progress: 0;
+        width : var(--progress);
+    }
+
+    .webkit_clamp { /*custom untuk 10, bisa tailwind sebenarnya*/
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card_layanan .front {
+        opacity: 1;
+        transition: opacity 0s;
+    }
+
+    .card_layanan .back {
+        opacity: 0;
+        transition: opacity 0.15s; /* timing paling cucok */
+    }
+
+    .card_layanan {
+        border-radius: 50%;
+        transition: height 0.5s, weight 0.5s, border-radius 0.5s;
+    }
+
+    .card_layanan:hover .front {
+        opacity: 0;
+    }
+
+    .card_layanan:hover .back {
+        opacity: 1;
+    }
+
+    .card_layanan:hover .back p {
+        color : #000000;
+    }
+
+    .card_layanan:hover {
+        border-radius: 5%;
+    }
+
+    .see_all:hover > .title {
+        display: none;
+    }
+
+
+    .hidden_bottom {
+        opacity: 0;
+        transition: 150ms;
+        transform: translateY(20px);
+    }
+
+    @keyframes down_up {
+        0% {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .show_bottom {
+        animation: down_up 1s ease-in-out 1 forwards;
+    }
+
+
+    /* MISI ANIMATE */
+    .hidden_right {
+        opacity: 0;
+        transition: 150ms;
+        transform: translateX(20px);
+    }
+
+    @keyframes right_left {
+        0% {
+            transform: translateX(20px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .show_right {
+        animation: right_left 1s ease-in-out 1 forwards;
+    }
+
+    .hidden_left {
+        opacity: 0;
+        transition: 150ms;
+        transform: translateX(-20px);
+    }
+
+    @keyframes left_right {
+        0% {
+            transform: translateX(-20px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .show_left {
+        animation: left_right 1s ease-in-out 1 forwards;
+    }
+
+}
