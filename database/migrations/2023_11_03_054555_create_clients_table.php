@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            $table->string('company_name')->unique()->nullable(false);
-            $table->string('year_established')->nullable(false);
-            $table->string('company_logo')->nullable(false);
+            $table->string('company_name')->unique()->nullable(true);
+            $table->string('location')->nullable(true);
+            $table->string('company_logo')->nullable(true);
             $table->timestamps();
         });
     }
