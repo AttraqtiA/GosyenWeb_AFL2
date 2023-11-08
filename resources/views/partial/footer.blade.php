@@ -1,4 +1,4 @@
-<footer class="py-3 px-4 bg-dark">
+<footer class="py-5 px-5 bg-dark" data-bs-theme="dark">
     <div class="row">
         <div class="col-6 mb-3">
             <h3 class="mb-3 text-primary">Contact Us</h3>
