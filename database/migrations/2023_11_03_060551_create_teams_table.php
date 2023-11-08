@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('name')->nullable(false);
             $table->string('expertise')->nullable(false);
-            $table->string('year_experience')->nullable(false);
             $table->string('profile_photo')->nullable(false);
             $table->timestamps();
         });
