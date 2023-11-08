@@ -184,7 +184,7 @@
                     </div>
                     <div class="m-auto back w-3/4 absolute opacity-0">
                         <h1 class="pb-2.5 font-bold text-center text-2xl text-sky-50 border-b-2 border-sky-50">Family Business Mentoring</h1>
-                        <p class="pt-4 text-center"><i class="font-semibold">"Generasi Pertama membangun, Generasi Kedua menikmati, Generasi Ketiga menghancurkan"</i> <br><br>Membangun sistem manajemen kinerja terintegrasi, berinovasi, serta menerapkan perbaikan berkelanjutan.</p>
+                        <p class="pt-4 text-center"><i class="font-semibold">Generasi Pertama membangun, Generasi Kedua menikmati, Generasi Ketiga menghancurkan"</i> <br><br>Membangun sistem manajemen kinerja terintegrasi, berinovasi, serta menerapkan perbaikan berkelanjutan.</p>
                     </div>
                 </div>
             </div>
