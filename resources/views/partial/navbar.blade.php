@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark rounded-bottom-5 border-dark" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-dark border-dark px-4" data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="/images/gosyen_logo.png" alt="Gosyen Logo" width="55" height="55"

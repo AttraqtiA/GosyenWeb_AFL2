@@ -30,21 +30,21 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="/images/gosyen_logo.png" class="d-block w-100" alt="Image #1">
+                            <img src="{{ $carousel_1 }}" class="w-100 h-50" alt="Image #1">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>{{ $pageTitle }}</h5>
                                 <p>{{ $pageDescription }}</p>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="..." class="d-block w-100" alt="Image #2">
+                            <img src="{{ $carousel_2 }}" class="d-block w-100 h-50" alt="Image #2">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>{{ $pageTitle }}</h5>
                                 <p>{{ $pageDescription }}</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="Image #3">
+                            <img src="{{ $carousel_3 }}" class="d-block w-100 h-50 img-fluid" alt="Image #3">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>{{ $pageTitle }}</h5>
                                 <p>{{ $pageDescription }}</p>

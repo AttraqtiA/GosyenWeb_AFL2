@@ -17,8 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 // Route::view('/', 'index');
 
-Route::get('/', function () {
-    return view(
-        'layouts.main',
-    );
-});
+Route::get('/team', [TeamController::class, 'index']);

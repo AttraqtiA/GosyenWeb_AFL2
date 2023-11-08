@@ -13,7 +13,15 @@ class TeamController extends Controller
      */
     public function index()
     {
-        //
+        return view('team_section/team_page', [
+            "carousel_1" => "images/Galeri/team 1.jpg",
+            "carousel_2" => "images/Galeri/team 2.jpg",
+            "carousel_3" => "images/Galeri/team 3.jpg",
+            "pageTitle" => "Our Team",
+            "pageDescription" => "Introducing Our Prosperous Team",
+            // 'teams' => Team::all(),
+        ]);
+
     }
 
     /**

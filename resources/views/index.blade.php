@@ -1,7 +1,5 @@
-<x-bottomnavbar>
+@extends('layouts.main')
 
-    <x-slot:content_here>
-        <p>Content here</p>
-    </x-slot:content_here>
+@section('content_page')
 
-</x-bottomnavbar>
+@endsection
