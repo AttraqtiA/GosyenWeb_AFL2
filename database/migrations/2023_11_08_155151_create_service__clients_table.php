@@ -11,12 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('teams', function (Blueprint $table) {
+        Schema::create('service__clients', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('expertise')->nullable();
-            $table->string('profile_photo')->nullable();
             $table->timestamps();
+            $table->foreignId('service_id')
+            ->constrained('services')
+            ->onUpdate('cascade')
+            ->onDelete('cascade');
+            $table->foreignId('client_id')
+            ->constrained('clients')
+            ->onUpdate('cascade')
+            ->onDelete('cascade');
         });
     }
 
@@ -25,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('teams');
+        Schema::dropIfExists('service__clients');
     }
 };
