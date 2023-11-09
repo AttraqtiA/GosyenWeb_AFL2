@@ -104,11 +104,6 @@ class ClientSeeder extends Seeder
             'company_logo' => 'public/images/suryalembahmerkon_logo.jpeg',
         ]);
         DB::table("clients")->insert([
-            'company_name' => 'CV. Anugrah Karya Mandiri',
-            'location' => 'Semarang',
-            'company_logo' => '',
-        ]);
-        DB::table("clients")->insert([
             'company_name' => 'PT. Masa Baru Guna Persada',
             'location' => 'Kudus',
             'company_logo' => 'public/images/masabaru_logo.jpeg',
@@ -127,11 +122,6 @@ class ClientSeeder extends Seeder
             'company_name' => 'The Peak Garage',
             'location' => 'Semarang',
             'company_logo' => 'public/images/peakgarage_logo.jpeg',
-        ]);
-        DB::table("clients")->insert([
-            'company_name' => 'PT. Parama Bara Intercontinental',
-            'location' => 'Jakarta',
-            'company_logo' => '',
         ]);
         DB::table("clients")->insert([
             'company_name' => 'CV. Bangun Baru Jaya',

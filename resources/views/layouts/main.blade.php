@@ -6,82 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Layout</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-        .carousel-item {
-            height: 35rem !important;
-        }
-    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col p-0">
-                @include('partial.navbar')
-            </div>
-        </div>
-        <div class="row">
-            <div class="col p-0">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="2000">
-                            <img src="{{ $carousel_1 }}" class="d-block w-100 object-fit-cover mt-5" alt="Image #1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="fw-bold text-primary fw-bold"
-                                    style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);">{{ $pageTitle }}</h3>
-                                <p style=" text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);">{{ $pageDescription }}</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="{{ $carousel_2 }}" class="d-block w-100 object-fit-cover mt-5" alt="Image #2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="fw-bold text-primary fw-bold"
-                                    style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);">{{ $pageTitle }}</h3>
-                                <p style=" text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);">{{ $pageDescription }}</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ $carousel_3 }}" class="d-block w-100 object-fit-cover" alt="Image #3">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3 class="fw-bold text-primary fw-bold"
-                                    style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);">{{ $pageTitle }}</h3>
-                                <p style=" text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);">{{ $pageDescription }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+    <div class="">
+        @include('partial.navbar')
+
+        <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <img src="{{ $carousel_1 }}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{ $carousel_2 }}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{ $carousel_3 }}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col p-0">
-                @yield('content_page')
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
             </div>
+
+            <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
-        <div class="row">
-            <div class="col p-0">
-                @include('partial.footer')
-            </div>
-        </div>
+
+        @yield('content_page')
+
+        @include('partial.footer')
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
