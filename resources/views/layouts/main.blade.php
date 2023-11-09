@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Layout</title>
-
+    <title>{{ $pageTitle }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="">
-        @include('partial.navbar')
+    <div class="flex flex-col">
 
-        <div id="indicators-carousel" class="relative w-full" data-carousel="static">
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div>
+            @include('partial.navbar')
+        </div>
+
+        <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
+            <div class="relative h-56 overflow-hidden md:h-96">
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                     <img src="{{ $carousel_1 }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
+                        alt="...">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="{{ $carousel_2 }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
+                        alt="...">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="{{ $carousel_3 }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
+                        alt="...">
                 </div>
             </div>
             <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -66,14 +72,16 @@
             </button>
         </div>
 
-        @yield('content_page')
+        <div class="mx-auto bg-neutral-200">
+            @yield('content_page')
+        </div>
 
-        @include('partial.footer')
+        <div>
+            @include('partial.footer')
+        </div>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 </body>
 </body>
 
