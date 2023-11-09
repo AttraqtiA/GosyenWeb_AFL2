@@ -1,9 +1,9 @@
 <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
     <div class="mx-auto">
-        <div class="flex justify-between gap-24 w-full">
+        <div class="flex justify-center gap-24 w-full">
             <div class="mb-6 md:mb-0 w-32">
-                <a href="#" class="flex items-center">
-                    <img src="public/images/gosyen_logo.png" class="mr-3 h-8" alt="Gosyen Logo" />
+                <a href="#" class="">
+                    <img src="images/gosyen_logo.png" class="mr-3 w-24" alt="Gosyen Logo" />
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
