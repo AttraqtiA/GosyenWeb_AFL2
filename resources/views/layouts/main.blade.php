@@ -8,15 +8,14 @@
     <title>Layout</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
     <div class="container-fluid p-0">
-        <div class="row">
-            <div class="col p-0">
                 @include('partial.navbar')
-            </div>
-        </div>
         <div class="row">
             <div class="col p-0">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
