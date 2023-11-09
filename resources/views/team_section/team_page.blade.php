@@ -1,27 +1,22 @@
 @extends('layouts.main')
 
 @section('content_page')
-    <div class="album pt-5 pb-4 bg-dark-subtle">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                @foreach ($teams as $team)
-                    <div class="col">
-                        <div class="card shadow-sm h-100 bg-dark border-dark-subtle">
-                            <img src="{{ $team->profile_photo }}" alt="{{ $team->profile_photo }}"
-                                class="card-img-top object-fit-cover" height="450px">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <h5 class="card-title text-center text-primary fw-bold">{{ $team->name }}</h5>
-                                <p class="card-text text-center text-white">{{ $team->expertise }}</p>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-            <div class="row mt-5">
-                <div class="col d-flex justify-content-center">
-                    {{ $teams->links() }}
+    <div class = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 pt-12 pr-12 pl-12 pb-8">
+        @foreach ($teams as $team)
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-fit">
+                <a href="#">
+                    <img class="rounded-t-lg h-4/5 object-cover " src="{{ $team->profile_photo }}" alt="{{ $team->profile_photo }}" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-500 text-center">{{ $team->name }}</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-white text-center">{{ $team->expertise }}</p>
                 </div>
             </div>
-        </div>
+        @endforeach
+    </div>
+    <div class="flex justify-center mb-12">
+        {{ $teams->links() }}
     </div>
 @endsection

@@ -18,8 +18,8 @@ class TeamController extends Controller
             "carousel_2" => "images/Galeri/team 2_cropped.jpg",
             "carousel_3" => "images/Galeri/team 3_cropped.jpg",
             "pageTitle" => "Our Team",
-            "pageDescription" => "Introducing Our Prosperous Team",
-            "active" => "our_teams",
+
+            "active_3" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-blue-500",
             "teams" => Team::paginate(6),
         ]);
     }

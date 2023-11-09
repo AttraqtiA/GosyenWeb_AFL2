@@ -17,4 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 // Route::view('/', 'index');
 
-Route::get('/team', [TeamController::class,'index']);
+Route::get('/', [ServiceController::class,'index']);
+
+Route::get('/clients', [ClientController::class,'index']);
+
+Route::get('/teams', [TeamController::class,'index']);
+
+Route::get('/gallery', [GalleryController::class,'index']);
+
+Route::view('/contact_us', 'contact');
