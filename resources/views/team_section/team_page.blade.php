@@ -8,7 +8,7 @@
         </div>
         @foreach ($teams as $team)
             <div class="max-w-sm bg-white border border-gray-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-800 mx-auto">
-                <img class="rounded-t-lg sm:h-screen md:h-5/6 lg:h-4/5 object-cover" src="{{ $team->profile_photo }}"
+                <img class="rounded-t-lg sm:h-screen md:h-5/6 lg:h-4/5 object-cover" src="/images/karyawan_gosyen/{{ $team->profile_photo }}"
                     alt="{{ $team->profile_photo }}" />
                 <div class="p-5">
                     <h5 class="text-2xl font-bold tracking-tight text-blue-500 text-center">{{ $team->name }}</h5>

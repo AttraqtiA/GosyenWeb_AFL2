@@ -20,19 +20,19 @@
         <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
             <div class="relative h-56 overflow-hidden md:h-96">
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <img src="{{ $carousel_1 }}"
+                    <img src="/images/Galeri/{{ $carousel_1 }}"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
-                        alt="...">
+                        alt="{{ $carousel_1 }}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ $carousel_2 }}"
+                    <img src="/images/Galeri/{{ $carousel_2 }}"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
-                        alt="...">
+                        alt="{{ $carousel_2 }}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ $carousel_3 }}"
+                    <img src="/images/Galeri/{{ $carousel_3 }}"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
-                        alt="...">
+                        alt="{{ $carousel_3 }}">
                 </div>
             </div>
             <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -43,7 +43,6 @@
                 <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
                     data-carousel-slide-to="2"></button>
             </div>
-
             <button type="button"
                 class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev>
