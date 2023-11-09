@@ -20,7 +20,7 @@ class TeamController extends Controller
             "pageTitle" => "Our Team",
             "pageDescription" => "Introducing Our Prosperous Team",
             "active" => "our_teams",
-            "teams" => Team::paginate(6),
+            "teams" => Team::paginate(8),
         ]);
     }
 
