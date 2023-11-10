@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Layout</title>
+    <title>{{ $pageTitle ?? "Mitra Strategis Perusahaan - Gosyen Polinator" }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="icon" href="images/gosyen_logo_240.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='resources/js/script.js' defer></script>
 </head>
 
 <body>
@@ -19,17 +24,17 @@
         <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
             <div class="relative h-56 overflow-hidden md:h-96">
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <img src="/images/Galeri/{{ $carousel_1 }}"
+                    <img src="images/Galeri/{{ $carousel_1 }}"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
                         alt="{{ $carousel_1 }}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/images/Galeri/{{ $carousel_2 }}"
+                    <img src="images/Galeri/{{ $carousel_2 }}"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
                         alt="{{ $carousel_2 }}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/images/Galeri/{{ $carousel_3 }}"
+                    <img src="images/Galeri/{{ $carousel_3 }}"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
                         alt="{{ $carousel_3 }}">
                 </div>

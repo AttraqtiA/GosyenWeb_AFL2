@@ -14,9 +14,9 @@ class ServiceController extends Controller
     public function index()
     {
         return view('index', [
-            "carousel_1" => "images/Galeri/swipe_home 1.jpg",
-            "carousel_2" => "images/Galeri/swipe_home 2.jpg",
-            "carousel_3" => "images/Galeri/swipe_home 3.jpg",
+            "carousel_1" => "swipe_home 1.jpg",
+            "carousel_2" => "swipe_home 2.jpg",
+            "carousel_3" => "swipe_home 3.jpg",
 
             "active_1" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-blue-500",
             "services" => Service::all(),
