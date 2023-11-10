@@ -17,8 +17,8 @@ class ClientController extends Controller
             "carousel_1" => "swipe_home 2.jpg",
             "carousel_2" => "client 2.jpg",
             "carousel_3" => "swipe_home 3.jpg",
-            'pageTitle' => '"Our <mark class="px-2 text-white bg-blue-500 rounded dark:bg-blue-500"> Client</mark>"',
-            'pageDescription' => 'Meet Our <span class="underline underline-offset-2 decoration-4 decoration-blue-500 dark:decoration-blue-500">Valued Clients.</span>',
+            'pageTitle' => '"Our <mark class="px-2 text-sky-400 bg-gray-800 rounded dark:bg-gray-800"> Client</mark>"',
+            'pageDescription' => 'Meet Our <span class="underline underline-offset-2 decoration-4 decoration-sky-400 dark:decoration-sky-400">Valued Clients.</span>',
             "active" => "our_client",
             "clients" => Client::paginate(8),
         ]);

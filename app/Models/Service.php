@@ -2,17 +2,19 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Client;
+use App\Models\Service_Client;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Service extends Model
 {
     use HasFactory;
 
     protected $guarded = ['id'];
-    public function service_client(): BelongsTo
+    public function clients()
     {
-        return $this->belongsTo(Service_Client::class);
+        return $this->belongsToMany(Client::class)->using(Service_Client::class);
     }
 }

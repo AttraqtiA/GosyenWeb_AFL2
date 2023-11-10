@@ -11,14 +11,5 @@ class Service_Client extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
-
-    public function service(): HasMany
-    {
-        return $this->hasMany(Service::class);
-    }
-
-    public function client(): HasMany
-    {
-        return $this->hasMany(Client::class);
-    }
+    protected $table = 'service_clients';
 }
