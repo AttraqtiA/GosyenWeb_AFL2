@@ -19,7 +19,7 @@ class TeamController extends Controller
             "carousel_3" => "team 3_cropped.jpg",
             'pageTitle' => '"Our <mark class="px-2 text-white bg-blue-500 rounded dark:bg-blue-500"> Team</mark>"',
             'pageDescription' => 'Introducing Our <span class="underline underline-offset-2 decoration-4 decoration-blue-500 dark:decoration-blue-500">Prosperous Team.</span>',
-            "active" => "our_teams",
+            "active" => "our_team",
             "teams" => Team::paginate(8),
         ]);
     }

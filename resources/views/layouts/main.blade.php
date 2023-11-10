@@ -71,7 +71,7 @@
             </button>
         </div>
 
-        <div class="mx-auto bg-neutral-200">
+        <div class=" bg-neutral-200">
             @yield('content_page')
         </div>
 

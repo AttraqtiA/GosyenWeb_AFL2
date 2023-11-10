@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 // Route::view('/', 'index');
 
-Route::get('/teams', [TeamController::class,'index']);
+Route::get('/', [ServiceController::class, 'index']);
+
+Route::get('/teams', [TeamController::class, 'index']);
+
+Route::get('/clients', [ClientController::class, 'index']);
+
+Route::get('/galleries', [GalleryController::class, 'index']);
+
+Route::view('/contact_us', 'contact');

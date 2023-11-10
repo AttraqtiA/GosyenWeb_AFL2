@@ -13,7 +13,15 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        //
+        return view('gallery_section.gallery_page', [
+            "carousel_1" => "liburan 1.jpg",
+            "carousel_2" => "liburan 2.jpg",
+            "carousel_3" => "liburan 8.jpg",
+            'pageTitle' => '"Our <mark class="px-2 text-white bg-blue-500 rounded dark:bg-blue-500"> Gallery</mark>"',
+            'pageDescription' => 'Explore our <span class="underline underline-offset-2 decoration-4 decoration-blue-500 dark:decoration-blue-500">company\'s vibrant activities in our gallery.</span>',
+            "active" => "galleries",
+            "galleries" => Gallery::all(),
+        ]);
     }
 
     /**
