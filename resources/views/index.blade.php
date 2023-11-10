@@ -58,4 +58,77 @@
         </div>
     </div>
 </section>
+
+<section id="services" class="snap-start">
+    <div class="px-6 py-24 md:px-16 lg:p-24">
+        <h2 class="text-xl text-center mb-3 text-sky-400">LAYANAN KAMI</h2>
+        <h2 class="text-center mb-20 lg:mb-28 text-4xl font-bold">Program & Layanan <mark class="bg-amber-300">Unggulan</mark> yang <mark class="bg-amber-300"><i>Next Level&nbsp;</i></mark> </h2>
+
+        <div class="mx-0 md:mx-10 lg:mx-32 relative grid grid-cols-1 md:grid-cols-2 gap-24">
+
+            <div class="card_layanan relative m-auto w-[200px] hover:w-full lg:hover:w-3/4 h-[200px] hover:h-[550px] lg:hover:h-[450px] bg-sky-50 hover:bg-sky-400 border-2 border-sky-500 hover:border-sky-50 p-2 md:p-4 lg:p-8 shadow-lg flex flex-col items-center justify-center hidden_bottom">
+                <div class="front m-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="asset/business_consult.png" alt="" class="mx-auto mb-5 w-20">
+                    <p class="text-center p-1 bg-sky-400 rounded-xl text-sky-50 block">DETAILS</p>
+                </div>
+                <div class="m-auto back w-3/4 relative opacity-0">
+                    <h1 class="pb-2.5 font-bold text-center text-2xl text-sky-50 border-b-2 border-sky-50">Business Consulting</h1>
+                    <p class="pt-4 text-center">Membantu Anda mengembangkan strategi bisnis yang inovatif dan efektif, menyediakan analisis pasar, perencanaan strategis, dan pengembangan model bisnis yang sesuai dengan tujuan perusahaan Anda. Bawa bisnis anda ke tingkat selanjutnya!</p>
+                </div>
+            </div>
+
+            <div class="card_layanan relative m-auto w-[200px] hover:w-full lg:hover:w-3/4 h-[200px] hover:h-[500px] lg:hover:h-[400px] bg-sky-50 hover:bg-sky-400 border-2 border-sky-500 hover:border-sky-50 p-8 shadow-lg flex flex-col items-center justify-center hidden_bottom">
+                <div class="front m-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="asset/audit.png" alt="" class="mx-auto mb-5 w-20">
+                    <p class="text-center p-1 bg-sky-400 rounded-xl text-sky-50 block">DETAILS</p>
+                </div>
+                <div class="m-auto back w-3/4 absolute opacity-0">
+                    <h1 class="pb-2.5 font-bold text-center text-2xl text-sky-50 border-b-2 border-sky-50">Audit</h1>
+                    <p class="pt-4 text-center">Dengan integritas dan kualitas laporan keuangan, kami memeriksa kepatuhan terhadap standar akuntansi yang berlaku secara menyeluruh, serta memberikan keyakinan kepada Anda untuk mengambil keputusan yang tepat dan melindungi aset perusahaan Anda.</p>
+                </div>
+            </div>
+
+            <div class="card_layanan relative m-auto w-[200px] hover:w-full lg:hover:w-3/4 h-[200px] hover:h-[550px] lg:hover:h-[450px] bg-sky-50 hover:bg-sky-400 border-2 border-sky-500 hover:border-sky-50 p-8 shadow-lg flex flex-col items-center justify-center hidden_bottom">
+                <div class="front m-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="asset/lap_keuangan.png" alt="" class="mx-auto mb-5 w-20">
+                    <p class="text-center p-1 bg-sky-400 rounded-xl text-sky-50 block">DETAILS</p>
+                </div>
+                <div class="m-auto back w-3/4 absolute opacity-0">
+                    <h1 class="pb-2.5 font-bold text-center text-2xl text-sky-50 border-b-2 border-sky-50">Financial Statement</h1>
+                    <p class="pt-4 text-center">Menyediakan laporan keuangan yang transparan dan akurat, termasuk neraca, laba rugi, arus kas, laporan perubahan ekuitas, dan catatan-catatan tambahan yang relevan sehingga Anda dapat mengambil keputusan bisnis dengan kepastian dan mengoptimalkan kinerja finansial perusahaan Anda.</p>
+                </div>
+            </div>
+
+            <div class="card_layanan relative m-auto w-[200px] hover:w-full lg:hover:w-3/4 h-[200px] hover:h-[600px] lg:hover:h-[400px] bg-sky-50 hover:bg-sky-400 border-2 border-sky-500 hover:border-sky-50 p-8 shadow-lg flex flex-col items-center justify-center hidden_bottom">
+                <div class="front m-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="asset/fambuss_mentoring.png" alt="" class="mx-auto mb-5 w-20">
+                    <p class="text-center p-1 bg-sky-400 rounded-xl text-sky-50 block">DETAILS</p>
+                </div>
+                <div class="m-auto back w-3/4 absolute opacity-0">
+                    <h1 class="pb-2.5 font-bold text-center text-2xl text-sky-50 border-b-2 border-sky-50">Family Business Mentoring</h1>
+                    <p class="pt-4 text-center"><i class="font-semibold">Generasi Pertama membangun, Generasi Kedua menikmati, Generasi Ketiga menghancurkan"</i> <br><br>Membangun sistem manajemen kinerja terintegrasi, berinovasi, serta menerapkan perbaikan berkelanjutan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- custom -->
+    <div class="py-24 px-6 bg-amber-100">
+        <div class="mx-0 md:mx-10 lg:mx-32 relative grid grid-cols-1 md:grid-cols-2 gap-24">
+            <div class="card_layanan relative m-auto w-[200px] hover:w-full lg:hover:w-3/4 h-[200px] hover:h-[500px] lg:hover:h-[400px] bg-sky-50 hover:bg-sky-400 border-2 border-sky-500 hover:border-sky-50 p-8 shadow-lg flex flex-col items-center justify-center hidden_bottom">
+                <div class="front m-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="asset/employee_coaching.png" alt="" class="mx-auto mb-5 w-20">
+                    <p class="text-center p-1 bg-sky-400 rounded-xl text-sky-50 block">DETAILS</p>
+                </div>
+                <div class="m-auto back w-3/4 absolute opacity-0">
+                    <h1 class="pb-2.5 font-bold text-center text-2xl text-sky-50 border-b-2 border-sky-50">Employee Coaching</h1>
+                    <p class="pt-4 text-center">Untuk meningkatkan kinerja karyawan melalui aktivitas <i>Outing</i>. Membangun bonding antar karyawan, karakter leadership, kreatif dan inovatif, serta kemampuan untuk beradaptasi di lingkungan kerja.</p>
+                </div>
+            </div>
+
+            <iframe class="w-[352px] h-[198px] md:w-[560px] md:h-[315px] mx-auto shadow-xl" src="https://www.youtube.com/embed/DyGMkV52DrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</section>
+
 @endsection
