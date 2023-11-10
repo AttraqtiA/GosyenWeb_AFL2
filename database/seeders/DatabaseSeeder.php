@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             ServiceSeeder::class,
             TeamSeeder::class,
             ServiceClientSeeder::class,
+            GallerySeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
 

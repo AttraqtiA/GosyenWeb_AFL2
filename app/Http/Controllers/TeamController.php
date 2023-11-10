@@ -14,13 +14,14 @@ class TeamController extends Controller
     public function index()
     {
         return view('team_section.team_page', [
-            "carousel_1" => "images/Galeri/team 1_cropped.jpg",
-            "carousel_2" => "images/Galeri/team 2_cropped.jpg",
-            "carousel_3" => "images/Galeri/team 3_cropped.jpg",
-            "pageTitle" => "Our Team",
-
+            "carousel_1" => "team 1_cropped.jpg",
+            "carousel_2" => "team 2_cropped.jpg",
+            "carousel_3" => "team 3_cropped.jpg",
+            'pageTitle' => '"Our <mark class="px-2 text-white bg-blue-500 rounded dark:bg-blue-500"> Team</mark>"',
+            'pageDescription' => 'Introducing Our <span class="underline underline-offset-2 decoration-4 decoration-blue-500 dark:decoration-blue-500">Prosperous Team.</span>',
             "active_3" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-blue-500",
-            "teams" => Team::paginate(6),
+
+            "teams" => Team::paginate(8),
         ]);
     }
 
