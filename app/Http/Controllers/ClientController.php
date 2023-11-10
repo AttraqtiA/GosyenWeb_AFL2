@@ -14,12 +14,12 @@ class ClientController extends Controller
     public function index()
     {
         return view('client_section.client_page', [
-            "carousel_1" => "images/Galeri/team 1_cropped.jpg",
-            "carousel_2" => "images/Galeri/team 2_cropped.jpg",
-            "carousel_3" => "images/Galeri/team 3_cropped.jpg",
-            'pageTitle' => '"Our <mark class="px-2 text-white bg-blue-500 rounded dark:bg-blue-500"> Team</mark>"',
-            'pageDescription' => 'Introducing Our <span class="underline underline-offset-2 decoration-4 decoration-blue-500 dark:decoration-blue-500">Prosperous Team.</span>',
-            "active" => "our_teams",
+            "carousel_1" => "swipe_home 2.jpg",
+            "carousel_2" => "client 2.jpg",
+            "carousel_3" => "swipe_home 3.jpg",
+            'pageTitle' => '"Our <mark class="px-2 text-white bg-blue-500 rounded dark:bg-blue-500"> Client</mark>"',
+            'pageDescription' => 'Meet Our <span class="underline underline-offset-2 decoration-4 decoration-blue-500 dark:decoration-blue-500">Valued Clients.</span>',
+            "active" => "our_client",
             "clients" => Client::paginate(8),
         ]);
     }
