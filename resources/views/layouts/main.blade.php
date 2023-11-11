@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ $pageTitle ?? "Mitra Strategis Perusahaan - Gosyen Polinator" }}</title>
+    <title>{{ $TabTitle ?? "Mitra Strategis Perusahaan - Gosyen Polinator" }}</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="icon" href="images/gosyen_logo_240.png">
 
+    @vite(['resources/css/app.css','resources/js/app.js'])
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='resources/js/script.js' defer></script>
 </head>
 
 <body>
-    <div class="flex flex-col">
+    <div class="flex flex-col" style="font-family: 'Poppins', sans-serif;">
         <div>
             @include('partial.navbar')
         </div>
@@ -75,7 +77,13 @@
             </button>
         </div>
 
-        <div class=" bg-neutral-200">
+        <div class="bg-neutral-200">
+            <div class="mx-auto max-w-screen-xl text-center sm:col-span-2 md:col-span-2 lg:col-span-4 mb-4 pt-16">
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl">
+                    {!! $pageTitle !!}</h1>
+                <p class="text-lg font-normal text-gray-800 lg:text-xl sm:px-16 lg:px-48">{!! $pageDescription !!}</p>
+            </div>
+
             @yield('content_page')
         </div>
 

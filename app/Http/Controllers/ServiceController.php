@@ -18,7 +18,7 @@ class ServiceController extends Controller
             "carousel_2" => "swipe_home 2.jpg",
             "carousel_3" => "swipe_home 3.jpg",
 
-            "active_1" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-blue-500",
+            "active_1" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-sky-500",
             "services" => Service::all(),
         ]);
     }

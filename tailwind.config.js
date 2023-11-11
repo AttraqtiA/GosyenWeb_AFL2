@@ -7,6 +7,10 @@ module.exports = {
       "./node_modules/flowbite/**/*.js"
     ],
     theme: {
+      screens: {
+        'fold': {'max-width' : '320px'},
+
+      },
       extend: {},
     },
     plugins: [

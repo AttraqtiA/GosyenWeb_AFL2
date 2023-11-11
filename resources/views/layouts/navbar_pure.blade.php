@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ $pageTitle ?? "Mitra Strategis Perusahaan - Gosyen Polinator" }}</title>
+    <title>{{ $TabTitle ?? "Mitra Strategis Perusahaan - Gosyen Polinator" }}</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="icon" href="images/gosyen_logo_240.png">
+
+    @vite(['resources/css/app.css','resources/js/app.js'])
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -17,20 +19,21 @@
 
 </head>
 
-<body style="font-family: 'Poppins', sans-serif;">
-    <div id="progress_bar" class="fixed z-10 top-0 bg-sky-500 h-1 md:h-2 rounded-full"></div>
-
-    <div class="">
+<div class="flex flex-col" style="font-family: 'Poppins', sans-serif;">
+    <div>
         @include('partial.navbar')
-
-        @yield('content_page')
-
-        @include('partial.footer')
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+
+    <div class=" bg-neutral-200">
+        @yield('content_page')
+    </div>
+
+    <div>
+        @include('partial.footer')
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+
 </body>
 
 </html>

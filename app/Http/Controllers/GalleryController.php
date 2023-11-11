@@ -17,9 +17,10 @@ class GalleryController extends Controller
             "carousel_1" => "liburan 1.jpg",
             "carousel_2" => "liburan 2.jpg",
             "carousel_3" => "liburan 8.jpg",
-            'pageTitle' => '"Our <mark class="px-2 text-white bg-blue-500 rounded dark:bg-blue-500"> Gallery</mark>"',
-            'pageDescription' => 'Explore our <span class="underline underline-offset-2 decoration-4 decoration-blue-500 dark:decoration-blue-500">company\'s vibrant activities in our gallery.</span>',
-            "active" => "galleries",
+            "TabTitle" => "Gallery",
+            'pageTitle' => '"Our <mark class="px-2 text-sky-400 bg-gray-800 rounded dark:bg-gray-800"> Gallery</mark>"',
+            'pageDescription' => 'Explore our <span class="underline underline-offset-2 decoration-4 decoration-sky-400 dark:decoration-sky-400">company\'s vibrant activities in our gallery.</span>',
+            "active_4" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-sky-500",
             "galleries" => Gallery::all(),
         ]);
     }

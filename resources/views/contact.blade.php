@@ -1,9 +1,9 @@
 @extends('layouts.navbar_pure')
 
 @section('content_page')
-    <div class="w-full px-6 py-24 md:px-16 lg:p-24 bg-white">
-        <h2 class="text-center mb-20 text-4xl font-bold">Untuk <mark class="bg-amber-300">Informasi</mark> lebih lanjut,
-            silahkan <mark class="bg-amber-300">Hubungi Kami</mark> melalui:</h2>
+    <div class="w-full px-6 py-24 md:px-16 lg:p-24">
+        <h2 class="text-center mb-20 text-4xl font-bold">Untuk <mark class="text-gray-800 bg-sky-300">Informasi</mark> lebih lanjut,
+            silahkan <mark class="text-gray-800 bg-sky-300">Hubungi Kami</mark> melalui:</h2>
 
         <div class="flex flex-col md:flex-row justify-around gap-5">
             <a href="https://api.whatsapp.com/send?phone=62811273823" class="m-auto">
