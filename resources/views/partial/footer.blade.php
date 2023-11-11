@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="mb-6 md:mb-0 w-32">
                 <a href="#" class="">
-                    <img src="images/gosyen_logo.png" class="mr-3 w-16 sm:w-24" alt="Gosyen Logo" />
+                    <img src="/images/gosyen_logo.png" class="mr-3 w-16 sm:w-24" alt="Gosyen Logo" />
                 </a>
             </div>
             <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-2 text-white">

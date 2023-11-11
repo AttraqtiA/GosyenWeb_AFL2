@@ -14,6 +14,8 @@
             </div>
         @endforeach
     </div>
+@endsection
+@section('pagination')
     <div class="flex justify-center mb-12">
         {{ $teams->links() }}
     </div>

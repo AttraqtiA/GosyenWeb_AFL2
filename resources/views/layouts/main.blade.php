@@ -85,6 +85,7 @@
             </div>
 
             @yield('content_page')
+            @yield('pagination')
         </div>
 
         <div>

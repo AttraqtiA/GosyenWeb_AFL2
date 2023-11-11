@@ -13,12 +13,15 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        return view('index', [
-            "carousel_1" => "swipe_home 1.jpg",
-            "carousel_2" => "swipe_home 2.jpg",
-            "carousel_3" => "swipe_home 3.jpg",
-
+        return view('service_section.service_page', [
+            "carousel_1" => "team 1_cropped.jpg",
+            "carousel_2" => "team 2_cropped.jpg",
+            "carousel_3" => "team 3_cropped.jpg",
+            "title" => "Our Service",
+            'pageTitle' => '"Our <mark class="px-2 text-sky-400 bg-gray-800 rounded dark:bg-gray-800"> Service</mark>"',
+            'pageDescription' => '"Discover Excellence With Our <span class="underline underline-offset-2 decoration-4 decoration-sky-400 dark:decoration-sky-400">Tailored Services.</span>',
             "active_1" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-sky-500",
+
             "services" => Service::all(),
         ]);
     }
@@ -42,9 +45,17 @@ class ServiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Service $service)
+    public function show($index)
     {
-        //
+        $service = Service::find($index);
+        return view('service_section.serviceDetails_page', [
+            "carousel_1" => "team 1_cropped.jpg",
+            "carousel_2" => "team 2_cropped.jpg",
+            "carousel_3" => "team 3_cropped.jpg",
+            "title" => "Our Service Details",
+            "active" => "our_serviceDetails",
+            "service_client" => $service,
+        ]);
     }
 
     /**

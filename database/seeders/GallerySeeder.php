@@ -15,48 +15,63 @@ class GallerySeeder extends Seeder
     {
         DB::table("galleries")->insert([
             'image' => 'swipe_home 2.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'swipe_home 1.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'swipe_home 3.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'client 2.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'Budi 1.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'office 3.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'liburan 1.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'liburan 2.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'liburan 8.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'liburan 5.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'liburan 6.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'liburan 9.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'swipe_team 1.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'swipe_team 3.jpg',
+            'caption' => 'Test'
         ]);
         DB::table("galleries")->insert([
             'image' => 'swipe_team 2.jpg',
+            'caption' => 'Test'
         ]);
     }
 }

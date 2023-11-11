@@ -27,4 +27,8 @@ Route::get('/teams', [TeamController::class,'index']);
 
 Route::get('/gallery', [GalleryController::class,'index']);
 
+Route::get('/services', [ServiceController::class, 'index']);
+
+Route::get('/services/{service_id}', [ServiceController::class, 'show']);
+
 Route::view('/contact_us', 'contact');

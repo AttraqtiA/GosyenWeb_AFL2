@@ -4,6 +4,11 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Database\Seeders\TeamSeeder;
+use Database\Seeders\ClientSeeder;
+use Database\Seeders\GallerySeeder;
+use Database\Seeders\ServiceSeeder;
+use Database\Seeders\ClientServiceSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,7 +21,7 @@ class DatabaseSeeder extends Seeder
             ClientSeeder::class,
             ServiceSeeder::class,
             TeamSeeder::class,
-            ServiceClientSeeder::class,
+            ClientServiceSeeder::class,
             GallerySeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
