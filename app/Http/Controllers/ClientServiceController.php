@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Service_Client;
-use App\Http\Requests\StoreService_ClientRequest;
-use App\Http\Requests\UpdateService_ClientRequest;
+use App\Models\ClientService;
+use App\Http\Requests\StoreClientServiceRequest;
+use App\Http\Requests\UpdateClientServiceRequest;
 
-class ServiceClientController extends Controller
+class ClientServiceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class ServiceClientController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreService_ClientRequest $request)
+    public function store(StoreClientServiceRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class ServiceClientController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Service_Client $service_Client)
+    public function show(ClientService $clientService)
     {
         //
     }
@@ -43,7 +43,7 @@ class ServiceClientController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Service_Client $service_Client)
+    public function edit(ClientService $clientService)
     {
         //
     }
@@ -51,7 +51,7 @@ class ServiceClientController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateService_ClientRequest $request, Service_Client $service_Client)
+    public function update(UpdateClientServiceRequest $request, ClientService $clientService)
     {
         //
     }
@@ -59,7 +59,7 @@ class ServiceClientController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Service_Client $service_Client)
+    public function destroy(ClientService $clientService)
     {
         //
     }

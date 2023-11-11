@@ -17,6 +17,7 @@ class TeamController extends Controller
             "carousel_1" => "team 1_cropped.jpg",
             "carousel_2" => "team 2_cropped.jpg",
             "carousel_3" => "team 3_cropped.jpg",
+            "title" => "Our Team",
             'pageTitle' => '"Our <mark class="px-2 text-sky-400 bg-gray-800 rounded dark:bg-gray-800"> Team</mark>"',
             'pageDescription' => 'Introducing Our <span class="underline underline-offset-2 decoration-4 decoration-sky-400 dark:decoration-sky-400">Prosperous Team.</span>',
             "active" => "our_team",

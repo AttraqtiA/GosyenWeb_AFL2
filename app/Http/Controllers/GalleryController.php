@@ -17,6 +17,7 @@ class GalleryController extends Controller
             "carousel_1" => "liburan 1.jpg",
             "carousel_2" => "liburan 2.jpg",
             "carousel_3" => "liburan 8.jpg",
+            "title" => "Our Gallery",
             'pageTitle' => '"Our <mark class="px-2 text-sky-400 bg-gray-800 rounded dark:bg-gray-800"> Gallery</mark>"',
             'pageDescription' => 'Explore Our <span class="underline underline-offset-2 decoration-4 decoration-sky-400 dark:decoration-sky-400">Company\'s Vibrant Activities.</span>',
             "active" => "galleries",

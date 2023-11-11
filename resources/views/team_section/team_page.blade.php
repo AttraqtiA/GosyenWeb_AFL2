@@ -9,7 +9,7 @@
         </div>
         @foreach ($teams as $team)
             <div
-                class="flex flex-col justify-center items-center w-full h-full bg-white border border-gray-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-800 mx-auto shadow hover:shadow-xl">
+                class="flex flex-col justify-center items-center w-full h-full bg-white border border-gray-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-800 mx-auto shadow hover:shadow-xl transform transition duration-500 hover:scale-110 hover:z-40">
                 <img class="h-3/4 rounded-t-lg w-full object-cover" src="/images/karyawan_gosyen/{{ $team->profile_photo }}"
                     alt="{{ $team->profile_photo }}" />
                 <div class="h-1/4 px-8 pb-2 flex flex-col justify-center items-center">
