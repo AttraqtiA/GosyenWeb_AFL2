@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $TabTitle ?? "Mitra Strategis Perusahaan - Gosyen Polinator" }}</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="icon" href="images/gosyen_logo_240.png">
+    <link rel="icon" href="/images/gosyen_logo_240.png">
 
     @vite(['resources/css/app.css','resources/js/app.js'])
 

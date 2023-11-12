@@ -1,39 +1,62 @@
 <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
     <div class="mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="mb-6 md:mb-0 w-32">
-                <a href="#" class="">
+        <div class="text-white flex flex-col md:flex-row justify-center gap-6 px-4 md:px-0">
+            <div class="mt-6 md:mt-0 w-32">
+                <a href="/" class="">
                     <img src="/images/gosyen_logo.png" class="mr-3 w-16 sm:w-24" alt="Gosyen Logo" />
                 </a>
             </div>
-            <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-2 text-white">
-                <div>
-                    <h2 class="mb-6 text-lg font-semibold uppercase">Find us</h2>
-                    <ul>
-                        <li class="mb-4 flex flex-row gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-sky-50">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+            <div class="w-full md:w-1/2">
+                <h2 class="mb-6 text-lg font-semibold uppercase">PT. Gosyen Polinator Indonesia</h2>
+                <p>Business Consultant, Auditor, Finance, Coach, Family Business, Accounting, Leadership, Innovative,
+                    Success</p>
+            </div>
+            <div>
+                <h2 class="mb-6 text-lg font-semibold uppercase">Find us</h2>
+                <div class="flex flex-col md:flex-row gap-6 lg:gap-4">
+                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-row gap-4">
+                        <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+
+                        <a href="https://www.google.com/maps/place/Gosyen+Prosperous+Miracle/@-6.9757802,110.4613145,17z/data=!3m1!4b1!4m6!3m5!1s0x2e708df6a0b04665:0x1b4af1acbab55d1e!8m2!3d-6.9757802!4d110.4613145!16s%2Fg%2F11kj8djqt_?entry=ttu"
+                            class="hover:underline">Jl. Sidoluhur Raya No.30, Kota
+                            Semarang, Jawa Tengah</a>
+                    </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-row gap-4">
+                            <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
                             </svg>
-                            <a href="https://www.google.com/maps/place/Gosyen+Prosperous+Miracle/@-6.9757802,110.4613145,17z/data=!3m1!4b1!4m6!3m5!1s0x2e708df6a0b04665:0x1b4af1acbab55d1e!8m2!3d-6.9757802!4d110.4613145!16s%2Fg%2F11kj8djqt_?entry=ttu" class="hover:underline">Jl. Sidoluhur Raya No.30, Muktiharjo Kidul, Kec. Pedurungan, Kota Semarang, Jawa Tengah</a>
-                        </li>
-                        <li class="flex flex-row gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sky-50">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            <a href="https://api.whatsapp.com/send?phone=62811273823" class="hover:underline">(+62)
+                                81-127-3823</a>
+                        </div>
+                        <div class="flex flex-row gap-4">
+                            <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <polyline points="3 7 12 13 21 7" />
                             </svg>
-                            <a href="https://api.whatsapp.com/send?phone=62811273823" class="hover:underline">(+62) 81-127-3823</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-lg font-semibold uppercase">PT. Gosyen Polinator Indonesia</h2>
-                    <p>Business Consultant, Auditor, Finance, Coach, Family Business, Accounting, Leadership, Innovative, Success</p>
+                            <a href="mailto:gosyenpolinator@gmail.com"
+                                class="hover:underline">gosyenpolinator@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
+
+        <div class="sm:flex sm:items-center sm:justify-between px-4 md:px-0">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href=""
                     class="hover:underline">Gosyen Polinator™</a>. All Rights Reserved.
             </span>

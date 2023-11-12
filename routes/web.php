@@ -19,13 +19,18 @@ use App\Http\Controllers\ServiceController;
 
 // Route::view('/', 'index');
 
-Route::get('/', [ServiceController::class,'index']);
+Route::view('/', 'index', [
+    "carousel_1" => "office 3.png",
+    "carousel_2" => "team 2_cropped.jpg",
+    "carousel_3" => "team 1_cropped.jpg",
+    "active_1" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-sky-500",
+]);
 
-Route::get('/clients', [ClientController::class,'index']);
+Route::get('/clients', [ClientController::class, 'index']);
 
-Route::get('/teams', [TeamController::class,'index']);
+Route::get('/teams', [TeamController::class, 'index']);
 
-Route::get('/gallery', [GalleryController::class,'index']);
+Route::get('/gallery', [GalleryController::class, 'index']);
 
 Route::get('/services', [ServiceController::class, 'index']);
 

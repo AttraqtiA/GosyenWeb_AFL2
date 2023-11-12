@@ -122,36 +122,16 @@ class ClientServiceSeeder extends Seeder
             'client_id' => 12,
         ]);
         DB::table("client_services")->insert([
-            'service_id' => 5,
-            'client_id' => 12,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 4,
-            'client_id' => 10,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 5,
-            'client_id' => 10,
-        ]);
-        DB::table("client_services")->insert([
             'service_id' => 1,
-            'client_id' => 11,
+            'client_id' => 13,
         ]);
         DB::table("client_services")->insert([
             'service_id' => 2,
-            'client_id' => 11,
+            'client_id' => 13,
         ]);
         DB::table("client_services")->insert([
             'service_id' => 3,
-            'client_id' => 11,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 2,
-            'client_id' => 12,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 5,
-            'client_id' => 12,
+            'client_id' => 13,
         ]);
         DB::table("client_services")->insert([
             'service_id' => 6,
@@ -162,19 +142,23 @@ class ClientServiceSeeder extends Seeder
             'client_id' => 14,
         ]);
         DB::table("client_services")->insert([
-            'service_id' => 6,
+            'service_id' => 1,
             'client_id' => 15,
         ]);
         DB::table("client_services")->insert([
-            'service_id' => 1,
-            'client_id' => 16,
+            'service_id' => 2,
+            'client_id' => 15,
+        ]);
+        DB::table("client_services")->insert([
+            'service_id' => 3,
+            'client_id' => 15,
         ]);
         DB::table("client_services")->insert([
             'service_id' => 2,
             'client_id' => 16,
         ]);
         DB::table("client_services")->insert([
-            'service_id' => 3,
+            'service_id' => 5,
             'client_id' => 16,
         ]);
         DB::table("client_services")->insert([
@@ -182,60 +166,48 @@ class ClientServiceSeeder extends Seeder
             'client_id' => 17,
         ]);
         DB::table("client_services")->insert([
-            'service_id' => 1,
+            'service_id' => 6,
             'client_id' => 18,
         ]);
         DB::table("client_services")->insert([
-            'service_id' => 2,
-            'client_id' => 18,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 3,
-            'client_id' => 18,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 2,
+            'service_id' => 6,
             'client_id' => 19,
         ]);
         DB::table("client_services")->insert([
-            'service_id' => 6,
+            'service_id' => 1,
             'client_id' => 20,
         ]);
         DB::table("client_services")->insert([
-            'service_id' => 1,
-            'client_id' => 21,
-        ]);
-        DB::table("client_services")->insert([
             'service_id' => 2,
-            'client_id' => 21,
+            'client_id' => 20,
         ]);
         DB::table("client_services")->insert([
             'service_id' => 3,
+            'client_id' => 20,
+        ]);
+        DB::table("client_services")->insert([
+            'service_id' => 6,
             'client_id' => 21,
+        ]);
+        DB::table("client_services")->insert([
+            'service_id' => 6,
+            'client_id' => 22,
+        ]);
+        DB::table("client_services")->insert([
+            'service_id' => 1,
+            'client_id' => 23,
+        ]);
+        DB::table("client_services")->insert([
+            'service_id' => 2,
+            'client_id' => 23,
+        ]);
+        DB::table("client_services")->insert([
+            'service_id' => 3,
+            'client_id' => 23,
         ]);
         DB::table("client_services")->insert([
             'service_id' => 4,
-            'client_id' => 21,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 6,
-            'client_id' => 21,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 1,
-            'client_id' => 22,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 2,
-            'client_id' => 22,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 3,
-            'client_id' => 22,
-        ]);
-        DB::table("client_services")->insert([
-            'service_id' => 6,
-            'client_id' => 22,
+            'client_id' => 23,
         ]);
         DB::table("client_services")->insert([
             'service_id' => 6,
@@ -245,5 +217,6 @@ class ClientServiceSeeder extends Seeder
             'service_id' => 6,
             'client_id' => 24,
         ]);
+
     }
 }

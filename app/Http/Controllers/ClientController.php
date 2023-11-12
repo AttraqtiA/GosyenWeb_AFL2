@@ -14,13 +14,13 @@ class ClientController extends Controller
     public function index()
     {
         return view('client_section.client_page', [
-            "carousel_1" => "swipe_home 2.jpg",
+            "carousel_1" => "swipe_home 3.png",
             "carousel_2" => "client 2.jpg",
-            "carousel_3" => "swipe_home 3.jpg",
+            "carousel_3" => "swipe_home 2.jpg",
             "TabTitle" => "Our Clients",
-            'pageTitle' => '"Our <mark class="px-2 text-sky-400 bg-gray-800 rounded dark:bg-gray-800"> Client</mark>"',
+            'pageTitle' => 'Our <mark class="px-2 text-sky-400 bg-gray-800 rounded dark:bg-gray-800"> Clients</mark>',
             'pageDescription' => 'Meet Our <span class="underline underline-offset-2 decoration-4 decoration-sky-400 dark:decoration-sky-400">Valued Clients.</span>',
-            "active_2" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-sky-500",
+            "active_3" => "text-white rounded md:bg-transparent md:text-sky-700 md:p-0 md:dark:text-sky-500",
             "clients" => Client::paginate(8),
         ]);
     }

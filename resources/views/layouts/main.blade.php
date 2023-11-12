@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $TabTitle ?? "Mitra Strategis Perusahaan - Gosyen Polinator" }}</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="icon" href="images/gosyen_logo_240.png">
+    <link rel="icon" href="/images/gosyen_logo_240.png">
 
     @vite(['resources/css/app.css','resources/js/app.js'])
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,17 +27,17 @@
             <div class="relative h-56 overflow-hidden md:h-96">
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                     <img src="images/Galeri/{{ $carousel_1 }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
+                        class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover object-top"
                         alt="{{ $carousel_1 }}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="images/Galeri/{{ $carousel_2 }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
+                        class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover object-top"
                         alt="{{ $carousel_2 }}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="images/Galeri/{{ $carousel_3 }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-top"
+                        class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover object-top"
                         alt="{{ $carousel_3 }}">
                 </div>
             </div>
@@ -78,16 +78,12 @@
         </div>
 
         <div class="bg-neutral-200">
-            <div class="mx-auto max-w-screen-xl text-center sm:col-span-2 md:col-span-2 lg:col-span-4 mb-4 pt-16">
-                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl">
-                    {!! $pageTitle !!}</h1>
-                <p class="text-lg font-normal text-gray-800 lg:text-xl sm:px-16 lg:px-48">{!! $pageDescription !!}</p>
-            </div>
 
             @yield('content_page')
             @yield('pagination')
         </div>
 
+        @include('partial.contact_src')
         <div>
             @include('partial.footer')
         </div>
